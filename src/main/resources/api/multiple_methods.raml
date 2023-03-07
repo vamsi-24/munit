@@ -1,0 +1,36 @@
+#%RAML 1.0
+title: multiple_methods
+
+/method:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: !include Datatypes/data.raml
+            example: !include example/file.json
+  post:
+    responses:
+      200:
+        body:
+         application/json:
+           type: !include Datatypes/data.raml
+           example: !include example/file.json
+  put:
+    responses:
+      200:
+        body:
+          application/json:
+            example: "data is updated"
+              
+  delete:
+    responses:
+      200:
+        body:
+          application/json:
+            example: "data is deleted"
+              
+                                        
+            
+                                            
+
