@@ -18,7 +18,7 @@ pipeline {
                                  ANYPOINT_CREDENTIALS = credentials('platform.credentials')
                                }
                    steps {
-                            bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0 -Dusername=vamsi-api -Dpassword=Vamsi@9110352363 -DworkerType=MICRO -Dworkers=1 -Dregion=us-east-2'
+                            bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0 -Dusername=vamsi-30 -Dpassword=Vamsi@9110352363 -DworkerType=MICRO -Dworkers=1 -Dregion=us-east-2'
                          }
                     }
          }
